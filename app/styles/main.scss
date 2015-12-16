@@ -18,33 +18,30 @@
 /*******************************************************
 * DO NOT PLACE VALUES BELOW THIS LINE - ONLY VARIABLES *
 *******************************************************/
+/* Responsive: Portrait tablets and up */
 
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
 .header {
-  border-bottom: 3px solid #e5e5e5;
+  border-bottom: $header-border-bottom;
 
   .logo {
     font-family: $logo-font;
     font-size: $logo-font-size;
     color: $logo-font-color;
   }
-  .identity > div > h2 {
-      margin: 5px;
+
+  .identity h2 {
+    margin-top: 0;
   }
 }
 
 .navbar {
   .logo {
     font-family: $logo-font;
+    font-size: $navbar-logo-font-size;
     color: $logo-font-color;
   }
-}
-
-/* Everything but the jumbotron gets side spacing for mobile first views */
-.header,
-.featured-work,
-.footer {
-  padding-left: 15px;
-  padding-right: 15px;
 }
 
 /* Custom page footer */
@@ -54,36 +51,15 @@
   border-top: 1px solid #e5e5e5;
 }
 
-/* Supporting marketing content */
-.featured-work {
-  margin: 30px 0;
-  p + h4 {
-    margin-top: 28px;
-  }
-}
-
-/* Responsive: Portrait tablets and up */
-
-/* Extra small devices (phones, less than 768px) */
-/* No media query since this is the default in Bootstrap */
-
 /* Small devices (tablets, 768px and up) */
 @media (min-width: $screen-sm-min) {
   .container {
     max-width: $max-width-sm;
   }
 
-  /* Remove the padding we set earlier */
-  .header,
-  .featured-work,
-  .footer {
-    padding-left: 0;
-    padding-right: 0;
-  }
-
   /* Space out the masthead */
   .header {
-    margin-bottom: 30px;
+    margin-bottom: $header-margin-bottom;
   }
 }
 
@@ -91,6 +67,20 @@
 @media (min-width: $screen-md-min) {
   .container {
     max-width: $max-width-md;
+  }
+
+  .header {
+    .logo {
+      text-align: $header-logo-text-alight;
+    }
+    .identity {
+      text-align: $header-identity-text-align;
+    }
+
+    .identity h2 {
+      margin: $header-identity-margin;
+      line-height: $header-identity-line-height;
+    }
   }
 }
 

@@ -1,4 +1,9 @@
-// Variables
+/* Variables */
+
+/* Global */
+
+// Typeicons Path
+$icon-font-path: "../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
 
 // Colors
 $logo-font-color: #0f67b2;
@@ -7,23 +12,50 @@ $logo-font-color: #0f67b2;
 $logo-font: 'Leckerli One', cursive;
 $font-family-sans-serif:  Lato, "Helvetica Neue", Helvetica, Arial, sans-serif !default;
 
-// Text Sizes
-$logo-font-size: 5em;
 
-// Typeicons Path
-$icon-font-path: "../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
-
-/*** Media Query Specific Variables ***/
 /* Extra small devices (phones, less than 768px) */
 /* No media query since this is the default in Bootstrap */
+
+
+// Text Sizes
+$logo-font-size: 5em;
+$navbar-logo-font-size: 2em;
+
+// Line Heights
+$header-identity-line-height: 40px;
+
+// Borders
+$header-border-bottom: 3px solid #e5e5e5;
+
+//Padding
+
+
+
+
 
 /* Small devices (tablets, 768px and up) */
 // @media (min-width: @screen-sm-min) { ... }
 $max-width-sm: 750px;
 
+// Margins
+$header-margin-bottom: 30px;
+$header-identity-margin: 27px 0 0 0;
+
+
+
+
+
 /* Medium devices (desktops, 992px and up) */
 //@media (min-width: @screen-md-min) { ... }
-$max-width-md: 970px;
+$max-width-md: 980px;
+
+// Text Align
+$header-logo-text-alight: left;
+$header-identity-text-align: right;
+
+
+
+
 
 /* Large devices (large desktops, 1200px and up) */
 //@media (min-width: @screen-lg-min) { ... }
