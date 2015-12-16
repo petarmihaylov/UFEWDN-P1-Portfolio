@@ -1,8 +1,11 @@
 $icon-font-path: "../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
 
-//import Leckerli One Logo Font
-@import url(https://fonts.googleapis.com/css?family=Leckerli+One);
+//import Leckerli One (logo font) and Typography font
+@import url(https://fonts.googleapis.com/css?family=Lato|Leckerli+One);
+
+
 $logo-font: 'Leckerli One', cursive;
+$font-family-sans-serif:  Lato, "Helvetica Neue", Helvetica, Arial, sans-serif !default;
 
 
 // bower:scss

@@ -380,15 +380,6 @@ module.exports = function (grunt) {
         'imagemin',
         'svgmin'
       ]
-    },
-
-
-    // USER DEFINED TASKS
-    'gh-pages': {
-      options: {
-        base: 'dist'
-      },
-      src: ['**']
     }
   });
 
