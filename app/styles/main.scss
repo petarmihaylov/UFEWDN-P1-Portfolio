@@ -49,6 +49,14 @@ footer {
   padding-top: 19px;
   color: #777;
   border-top: 1px solid #e5e5e5;
+
+  .cross {
+    color: $cross-font-color;
+  }
+
+  .service-why {
+    margin-top: $service-why-margin-top;
+  }
 }
 
 /* Small devices (tablets, 768px and up) */
