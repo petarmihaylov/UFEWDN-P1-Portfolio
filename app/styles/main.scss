@@ -1,35 +1,5 @@
-// Variables
-
-// Colors
-$logo-font-color: #0f67b2;
-
-// Typography
-$logo-font: 'Leckerli One', cursive;
-$font-family-sans-serif:  Lato, "Helvetica Neue", Helvetica, Arial, sans-serif !default;
-
-// Text Sizes
-$logo-font-size: 5em;
-
-// Typeicons Path
-$icon-font-path: "../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
-
-///// Media Query Specific Variables
-/* Extra small devices (phones, less than 768px) */
-/* No media query since this is the default in Bootstrap */
-
-/* Small devices (tablets, 768px and up) */
-// @media (min-width: @screen-sm-min) { ... }
-$max-width-sm: 750px;
-
-/* Medium devices (desktops, 992px and up) */
-//@media (min-width: @screen-md-min) { ... }
-$max-width-md: 970px;
-
-/* Large devices (large desktops, 1200px and up) */
-//@media (min-width: @screen-lg-min) { ... }
-$max-width-lg: 1170px;
-
-///// END: Media Query Specific Variables
+// import variables
+@import "_variables.scss";
 
 //import Leckerli One (logo font) and Typography font
 @import url(https://fonts.googleapis.com/css?family=Lato|Leckerli+One);
@@ -38,22 +8,20 @@ $max-width-lg: 1170px;
 @import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
 // endbower
 
+///// FIXED COMPONENTS
 .browsehappy {
   margin: 0.2em 0;
   background: #ccc;
   color: #000;
   padding: 0.2em 0;
 }
-
-/* Space out content a bit */
-body {
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
+/*******************************************************
+* DO NOT PLACE VALUES BELOW THIS LINE - ONLY VARIABLES *
+*******************************************************/
 
 .header {
   border-bottom: 3px solid #e5e5e5;
-  
+
   .logo {
     font-family: $logo-font;
     font-size: $logo-font-size;
@@ -120,7 +88,7 @@ body {
 }
 
 /* Medium devices (desktops, 992px and up) */
-@media (min-width: $screen-md-min) { 
+@media (min-width: $screen-md-min) {
   .container {
     max-width: $max-width-md;
   }
@@ -130,5 +98,5 @@ body {
 @media (min-width: $screen-lg-min) {
   .container {
     max-width: $max-width-lg;
-  } 
+  }
 }

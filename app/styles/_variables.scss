@@ -1,0 +1,32 @@
+// Variables
+
+// Colors
+$logo-font-color: #0f67b2;
+
+// Typography
+$logo-font: 'Leckerli One', cursive;
+$font-family-sans-serif:  Lato, "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+
+// Text Sizes
+$logo-font-size: 5em;
+
+// Typeicons Path
+$icon-font-path: "../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
+
+/*** Media Query Specific Variables ***/
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+
+/* Small devices (tablets, 768px and up) */
+// @media (min-width: @screen-sm-min) { ... }
+$max-width-sm: 750px;
+
+/* Medium devices (desktops, 992px and up) */
+//@media (min-width: @screen-md-min) { ... }
+$max-width-md: 970px;
+
+/* Large devices (large desktops, 1200px and up) */
+//@media (min-width: @screen-lg-min) { ... }
+$max-width-lg: 1170px;
+
+/*** END: Media Query Specific Variables ***/
