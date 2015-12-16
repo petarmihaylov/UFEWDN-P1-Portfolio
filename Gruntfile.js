@@ -380,6 +380,15 @@ module.exports = function (grunt) {
         'imagemin',
         'svgmin'
       ]
+    },
+
+    // USER ADDED TASKS
+    'gh-pages': {
+      options: {
+        base: 'dist',
+        repo: 'https://github.com/petarmihaylov/UFEWDN-P1-Portfolio.git'
+      },
+      src: ['**']
     }
   });
 
