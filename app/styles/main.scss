@@ -5,7 +5,7 @@
 @import                 url(https://fonts.googleapis.com/css?family=Lato|Leckerli+One);
 
 // bower:scss
-@import                 "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+@import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
 // endbower
 
 ///// FIXED COMPONENTS
@@ -93,7 +93,7 @@ footer {
 
     .identity h2 {
       margin:           $header-identity-margin;
-      line-height       $header-identity-line-height;
+      line-height:      $header-identity-line-height;
     }
   }
 }
