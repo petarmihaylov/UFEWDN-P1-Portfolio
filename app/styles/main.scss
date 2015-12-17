@@ -1,19 +1,19 @@
 // import variables
-@import "_variables.scss";
+@import                 "_variables.scss";
 
 //import Leckerli One (logo font) and Typography font
-@import url(https://fonts.googleapis.com/css?family=Lato|Leckerli+One);
+@import                 url(https://fonts.googleapis.com/css?family=Lato|Leckerli+One);
 
 // bower:scss
-@import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+@import                 "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
 // endbower
 
 ///// FIXED COMPONENTS
 .browsehappy {
-  margin: 0.2em 0;
-  background: #ccc;
-  color: #000;
-  padding: 0.2em 0;
+  margin:               0.2em 0;
+  background:           #ccc;
+  color:                #000;
+  padding:              0.2em 0;
 }
 /*******************************************************
 * DO NOT PLACE VALUES BELOW THIS LINE - ONLY VARIABLES *
@@ -23,78 +23,84 @@
 /* Extra small devices (phones, less than 768px) */
 /* No media query since this is the default in Bootstrap */
 .header {
-  border-bottom: $header-border-bottom;
+  border-bottom:        $header-border-bottom;
 
   .logo {
-    font-family: $logo-font;
-    font-size: $logo-font-size;
-    color: $logo-font-color;
+    font-family:        $logo-font;
+    font-size:          $logo-font-size;
+    color:              $logo-font-color;
   }
 
   .identity h2 {
-    margin-top: 0;
+    margin-top:         0;
   }
 }
 
 .navbar {
   .logo {
-    font-family: $logo-font;
-    font-size: $navbar-logo-font-size;
-    color: $logo-font-color;
+    font-family:        $logo-font;
+    font-size:          $navbar-logo-font-size;
+    color:              $logo-font-color;
   }
 }
 
 /* Custom page footer */
 footer {
-  padding-top: 19px;
-  color: #777;
-  border-top: 1px solid #e5e5e5;
+  padding-top:          19px;
+  color:                #777;
+  border-top:           1px solid #e5e5e5;
 
   .cross {
-    color: $cross-font-color;
+    color:              $cross-font-color;
   }
 
   .service-why {
-    margin-top: $service-why-margin-top;
+    margin-top:         $service-why-margin-top;
   }
 }
 
 /* Small devices (tablets, 768px and up) */
-@media (min-width: $screen-sm-min) {
+@media (min-width:      $screen-sm-min) {
   .container {
-    max-width: $max-width-sm;
+    max-width:          $max-width-sm;
   }
 
   /* Space out the masthead */
   .header {
-    margin-bottom: $header-margin-bottom;
+    margin-bottom:      $header-margin-bottom;
+
+    .identity {
+      p {
+        margin:         $header-identity-p-margin;
+      }
+    }
   }
 }
 
 /* Medium devices (desktops, 992px and up) */
-@media (min-width: $screen-md-min) {
+@media (min-width:      $screen-md-min) {
   .container {
-    max-width: $max-width-md;
+    max-width:          $max-width-md;
   }
 
   .header {
     .logo {
-      text-align: $header-logo-text-alight;
+      text-align:       $header-logo-text-alight;
     }
     .identity {
-      text-align: $header-identity-text-align;
+      text-align:       $header-identity-text-align;
     }
 
     .identity h2 {
-      margin: $header-identity-margin;
-      line-height: $header-identity-line-height;
+      margin:           $header-identity-margin;
+      line-height       $header-identity-line-height;
     }
   }
 }
 
 /* Large devices (large desktops, 1200px and up) */
-@media (min-width: $screen-lg-min) {
+@media (min-width:      $screen-lg-min) {
   .container {
-    max-width: $max-width-lg;
+    max-width:          $max-width-lg;
   }
 }

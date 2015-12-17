@@ -6,12 +6,57 @@
 $icon-font-path: "../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
 
 // Colors
-$logo-font-color: #0f67b2;
-$cross-font-color: $logo-font-color;
+// SASS style sheet */
+// Palette color codes */
+// Palette URL: http://paletton.com/#uid=33y0u0kvs-LjsHboUC5A7r9DNlj */
+
+// As hex codes */
+$color-primary-0: #0F68B2;  // Main Primary color */
+$color-primary-1: #5694C7;
+$color-primary-2: #337CB9;
+$color-primary-3: #08508C;
+$color-primary-4: #053E6E;
+
+$color-secondary-1-0: #FFC204;  // Main Secondary color (1) */
+$color-secondary-1-1: #FFD964;
+$color-secondary-1-2: #FFCE39;
+$color-secondary-1-3: #D8A300;
+$color-secondary-1-4: #AA8000;
+
+$color-secondary-2-0: #FF4F04;  // Main Secondary color (2) */
+$color-secondary-2-1: #FF9264;
+$color-secondary-2-2: #FF7439;
+$color-secondary-2-3: #D84100;
+$color-secondary-2-4: #AA3300;
+
+// As RGBa codes */
+$rgba-primary-0: rgba( 15,104,178,1); // Main Primary color */
+$rgba-primary-1: rgba( 86,148,199,1);
+$rgba-primary-2: rgba( 51,124,185,1);
+$rgba-primary-3: rgba(  8, 80,140,1);
+$rgba-primary-4: rgba(  5, 62,110,1);
+
+$rgba-secondary-1-0: rgba(255,194,  4,1); // Main Secondary color (1) */
+$rgba-secondary-1-1: rgba(255,217,100,1);
+$rgba-secondary-1-2: rgba(255,206, 57,1);
+$rgba-secondary-1-3: rgba(216,163,  0,1);
+$rgba-secondary-1-4: rgba(170,128,  0,1);
+
+$rgba-secondary-2-0: rgba(255, 79,  4,1); // Main Secondary color (2) */
+$rgba-secondary-2-1: rgba(255,146,100,1);
+$rgba-secondary-2-2: rgba(255,116, 57,1);
+$rgba-secondary-2-3: rgba(216, 65,  0,1);
+$rgba-secondary-2-4: rgba(170, 51,  0,1);
+
+// Other Colors
+$logo-font-color:               $color-primary-0;
+$cross-font-color:              $color-primary-0;
+$borders-color:                 #e5e5e5;
+
 
 // Typography
-$logo-font: 'Leckerli One', cursive;
-$font-family-sans-serif:  Lato, "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+$logo-font:                     'Leckerli One', cursive;
+$font-family-sans-serif:        Lato, "Helvetica Neue", Helvetica, Arial, sans-serif !default;
 
 
 /* Extra small devices (phones, less than 768px) */
@@ -19,47 +64,50 @@ $font-family-sans-serif:  Lato, "Helvetica Neue", Helvetica, Arial, sans-serif !
 
 
 // Text Sizes
-$logo-font-size: 5em;
-$navbar-logo-font-size: 2em;
+$logo-font-size:                5em;
+$navbar-logo-font-size:         2em;
 
 // Line Heights
-$header-identity-line-height: 40px;
+$header-identity-line-height:   40px;
 
 // Borders
-$header-border-bottom: 3px solid #e5e5e5;
+$header-border-bottom:          3px solid $borders-color;
 
 //Padding
 
 
 
 
-
+///////////////////////////////////////////
 /* Small devices (tablets, 768px and up) */
 // @media (min-width: @screen-sm-min) { ... }
-$max-width-sm: 750px;
+$max-width-sm:                  750px;
 
 // Margins
-$header-margin-bottom: 30px;
-$header-identity-margin: 27px 0 0 0;
-$service-why-margin-top: 5px;
+$header-margin-bottom:          30px;
+$header-identity-margin:        27px 0 0 0;
+$header-identity-p-margin:      0 0 23px;
+$service-why-margin-top:        5px;
 
 
 
 
+/////////////////////////////////////////////
 /* Medium devices (desktops, 992px and up) */
 //@media (min-width: @screen-md-min) { ... }
-$max-width-md: 980px;
+$max-width-md:                  980px;
 
 // Text Align
-$header-logo-text-alight: left;
-$header-identity-text-align: right;
+$header-logo-text-alight:       left;
+$header-identity-text-align:    right;
 
 
 
 
 
+///////////////////////////////////////////////////
 /* Large devices (large desktops, 1200px and up) */
 //@media (min-width: @screen-lg-min) { ... }
-$max-width-lg: 1170px;
+$max-width-lg:                  1170px;
 
 /*** END: Media Query Specific Variables ***/
