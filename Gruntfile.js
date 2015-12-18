@@ -453,4 +453,10 @@ module.exports = function (grunt) {
     'test',
     'build'
   ]);
+
+  //USER ADDED REGISTERED TASKS
+  grunt.registerTask('gh-pages-deploy', [
+    'build',
+    'gh-pages'
+  ]);
 };
