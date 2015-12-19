@@ -459,4 +459,21 @@ module.exports = function (grunt) {
     'build',
     'gh-pages'
   ]);
+
+  grunt.registerTask('build-pretty', [
+    'clean:dist',
+    'wiredep',
+    'useminPrepare',
+    'concurrent:dist',
+    'postcss',
+    //'concat',
+    //'cssmin',
+    //'uglify',
+    'copy:dist',
+    'modernizr',
+    'filerev',
+    'usemin',
+    'htmlmin'
+  ]);
+
 };

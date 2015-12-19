@@ -15,6 +15,14 @@
   color:                #000;
   padding:              0.2em 0;
 }
+
+// Centers a component vertically and horizontally
+.btn-current-project {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
 /*******************************************************
 * DO NOT PLACE VALUES BELOW THIS LINE - ONLY VARIABLES *
 *******************************************************/
@@ -61,6 +69,7 @@ footer {
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width:      $screen-sm-min) {
+
   .container {
     max-width:          $max-width-sm;
   }
@@ -79,6 +88,7 @@ footer {
 
 /* Medium devices (desktops, 992px and up) */
 @media (min-width:      $screen-md-min) {
+
   .container {
     max-width:          $max-width-md;
   }
@@ -100,6 +110,7 @@ footer {
 
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width:      $screen-lg-min) {
+
   .container {
     max-width:          $max-width-lg;
   }
