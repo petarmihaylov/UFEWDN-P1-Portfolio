@@ -9,6 +9,7 @@
 // endbower
 
 ///// FIXED COMPONENTS
+/* Brows Happy component for when the user has an outdated browser. */
 .browsehappy {
   margin:               0.2em 0;
   background:           #ccc;
@@ -40,7 +41,7 @@
   }
 
   .identity h2 {
-    margin-top:         0;
+    margin-top:         0; // leave this as is - not a variable, but it is zero and will not need to be changed
   }
 }
 
@@ -52,6 +53,7 @@
   }
 }
 
+/* TODO: Refactor Velues to Variables */
 /* Custom page footer */
 footer {
   padding-top:          19px;
