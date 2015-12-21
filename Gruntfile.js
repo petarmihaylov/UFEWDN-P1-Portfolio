@@ -347,6 +347,13 @@ module.exports = function (grunt) {
           cwd: '.',
           src: 'bower_components/bootstrap-sass/assets/fonts/bootstrap/*',
           dest: '<%= config.dist %>'
+        }, { // needed to that Polymer will be copied to dist and will still work after executing build
+             // USER ADDED!!!!!!!!!!!!!!!!!!!!
+          expand: true,
+          dot: true,
+          cwd: '.',
+          src: 'bower_components/polymer/*',
+          dest: '<%= config.dist %>'
         }]
       }
     },
