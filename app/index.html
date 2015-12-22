@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="no-js" lang="">
+<html class="no-js" lang="en">
   <head>
     <meta charset="utf-8">
     <title>Portfolio - Studio350</title>
@@ -46,9 +46,9 @@
         <div class="row">
           <div class="col-xs-12">
             <figure>
-              <img src="images/current-project.png" class="img-responsive center-block" alt="HTML5 Source Code">
+              <img class="img-responsive center-block" src="images/current-project.png" alt="HTML5 Source Code">
             </figure>
-            <a href="#" class="btn btn-primary btn-lg btn-current-project" role="button">Current Project</a>
+            <a href="#" class="btn btn-primary btn-lg center-vh" role="button">Current Project</a>
           </div>
         </div>
       </section><!-- /.hero -->
@@ -63,7 +63,7 @@
         <div class="row text-center">
           <div class="col-xs-12 col-sm-4">
             <div class="thumbnail">
-              <img src="images/yencies.com-thumb.png" alt="Screenshot of Yencies.com">
+              <img class="img-responsive center-block" src="images/yencies.com-thumb.png" alt="Screenshot of Yencies.com" data-toggle="modal" data-target="#yencies-com">
               <div class="caption">
                 <h3>Yencie's</h3>
                 <p>Hand made jewelry and accessories to make loog great, feel great, and be blold.</p>
@@ -76,6 +76,9 @@
           </div>
           <div class="col-xs-12 col-sm-4">
             <div class="thumbnail">
+              <!--
+                TODO: Add modals trigger for mishelfit.com (2)
+              -->
               <img src="images/mishelfit.com-thumb.png" alt="Screenshot of Mishelfit.com">
               <div class="caption">
                 <h3>MishelFit</h3>
@@ -89,6 +92,9 @@
           </div>
           <div class="col-xs-12 col-sm-4">
             <div class="thumbnail">
+              <!--
+                TODO: Add modals trigger for quoterush.com (2)
+              -->
               <img src="images/quoterush.com-thumb.png" alt="Screenshot of Quoterush.com">
               <div class="caption">
                 <h3>QuoteRush</h3>
@@ -105,6 +111,35 @@
 
       <!-- FOOTER -->
       <studio350-footer></studio350-footer>
+    </div>
+
+    <!-- MODALS -->
+    <!--
+      TODO: Add modals for MishelFit.com and QuoteRush.com
+    -->
+    <!-- Yencies.com -->
+    <div class="modal fade" id="yencies-com" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">Yencies.com</h4>
+          </div>
+          <div class="modal-body">
+            <!--
+              TODO: Add higher resolution image
+            -->
+            <img class="img-responsive center-block" src="images/yencies.com-thumb.png" alt="Screenshot of Yencies.com">
+            <hr>
+            <p>
+              Yencie's provides hand made jewelry and accessories. They needeed a website, branding, and business cards. The website was designed and built with WordPress to allo whem to easily customize it and add new items. The business cards design double as tags and earring tabs.
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
     </div>
 
 

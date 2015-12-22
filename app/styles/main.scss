@@ -18,7 +18,7 @@
 }
 
 // Centers a component vertically and horizontally
-.btn-current-project {
+.center-vh {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -53,7 +53,9 @@
   }
 }
 
-/* TODO: Refactor Velues to Variables */
+/*
+  TODO: Refactor Velues to Variables
+*/
 /* Custom page footer */
 footer {
   padding-top:          19px;
