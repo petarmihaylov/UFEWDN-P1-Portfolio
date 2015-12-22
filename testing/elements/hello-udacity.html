@@ -1,0 +1,40 @@
+<link rel="import" href="../../bower_components/polymer/polymer.html">
+<dom-module id="hello-udacity">
+  <template>
+      <h1>Hello Udacity!!!</h1>
+      I am learning <span>{{course}}</span> and it feels {{feeling}}!
+  </template>
+  <style type="text/css">
+    .red{
+      font-family: sans-serif;
+      color: #FF0000;
+      -webkit-text-stroke: 1px black;
+    }
+    .blue {
+      font-family: sans-serif;
+      color: #0700FF;
+      -webkit-text-stroke: 1px black;
+    }
+  </style>
+
+  <script>
+    Polymer({
+      is: "hello-udacity",
+      properties: {
+        course: {
+          type: String,
+          value: "front end web development"
+        },
+        feeling: {
+          type: String,
+          value: ""
+        },
+        color: {
+          type: String,
+          value: ""
+        }
+      }
+    });
+    console.log("")
+  </script>
+</dom-module>
